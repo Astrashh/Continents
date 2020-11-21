@@ -1,0 +1,21 @@
+{
+    "name": "River",
+    "derivative": "RIVER",
+    "vanillaDerivative": "RIVER",
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "gravel"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "river",
+            "max": -6,
+            "min": -12
+        }
+    ]
+}

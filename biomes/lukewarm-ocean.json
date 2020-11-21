@@ -1,0 +1,21 @@
+{
+    "name": "Lukewarm Ocean",
+    "derivative": "LUKEWARM_OCEAN",
+    "vanillaDerivative": "LUKEWARM_OCEAN",
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "gravel"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "ocean",
+            "max": -20,
+            "min": -20
+        }
+    ]
+}

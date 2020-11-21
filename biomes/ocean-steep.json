@@ -1,0 +1,110 @@
+{
+    "name": "Ocean Steep",
+    "derivative": "OCEAN",
+    "vanillaDerivative": "OCEAN",
+    "generators": [
+        {
+            "generator": "ocean-steep",
+            "max": -5,
+            "min": -25
+        }
+    ],
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "gravel"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.1,
+            "palette": [
+                {
+                    "block": "kelp_plant"
+                }
+            ],
+            "stackMin": 4,
+            "stackMax": 10
+        },
+        {
+            "chance": 0.05,
+            "palette": [
+                {
+                    "block": "seagrass"
+                }
+            ]
+        },
+        {
+            "chance": 0.05,
+            "palette": [
+                {
+                    "block": "tall_seagrass",
+                    "data": {
+                        "half": "lower"
+                    }
+                }
+            ],
+            "topPalette": [
+                {
+                    "block": "tall_seagrass",
+                    "data": {
+                        "half": "upper"
+                    }
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "landform/stone/1",
+                "landform/stone/2",
+                "landform/stone/3",
+                "landform/stone/4",
+                "landform/stone/5"
+            ],
+            "chance": 1,
+            "underwater": true,
+            "waterloggable": true,
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "grass_block"
+                        },
+                        {
+                            "block": "dirt"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "clay"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "tall_grass"
+                        },
+                        {
+                            "block": "grass"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "seagrass"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

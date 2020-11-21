@@ -1,0 +1,33 @@
+{
+    "name": "Marsh Water",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": -5,
+            "min": -5
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "block": "grass_block"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    }
+}

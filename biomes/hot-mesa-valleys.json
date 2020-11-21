@@ -1,0 +1,331 @@
+{
+    "name": "Mesa",
+    "derivative": "SAVANNA",
+    "vanillaDerivative": "BADLANDS",
+    "generators": [
+        {
+            "min": 5,
+            "max": 20,
+            "generator": "smooth-land"
+        }
+    ],
+    "layers": [
+        {
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 1.4,
+                "fracture": {
+                    "style": "FRACTAL_BILLOW_SIMPLEX",
+                    "zoom": 0.4,
+                    "multiplier": 50,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 3
+                    }
+                }
+            },
+            "zoom": 0.9,
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "weight": 3,
+                    "block": "red_sand"
+                },
+                {
+                    "weight": 2,
+                    "block": "orange_terracotta"
+                },
+                {
+                    "weight": 5,
+                    "block": "grass_block"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "light_gray_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "style": {
+                "style": "STATIC"
+            },
+            "palette": [
+                {
+                    "weight": 1,
+                    "block": "terracotta"
+                },
+                {
+                    "weight": 1,
+                    "block": "light_gray_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "block": "orange_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "style": {
+                "style": "STATIC"
+            },
+            "palette": [
+                {
+                    "weight": 1,
+                    "block": "terracotta"
+                },
+                {
+                    "weight": 1,
+                    "block": "light_gray_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "light_gray_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {
+                    "block": "white_tulip"
+                },
+                {
+                    "block": "red_tulip"
+                },
+                {
+                    "block": "orange_tulip"
+                },
+                {
+                    "block": "dandelion"
+                },
+                {
+                    "block": "poppy"
+                }
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [
+                {
+                    "block": "tall_grass"
+                }
+            ]
+        },
+        {
+            "chance": 0.5,
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.7,
+                "exponent": 1.2,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 7
+                }
+            },
+            "palette": [
+                {
+                    "weight": 20,
+                    "block": "grass"
+                },
+                {
+                    "weight": 11,
+                    "block": "air"
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "mossy_cobblestone"
+                        },
+                        {
+                            "block": "cobblestone"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "andesite"
+                            },
+                            {
+                                "block": "stone"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "cobblestone_slab"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "stone_slab",
+                                "data": {
+                                    "type": "bottom"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "vine"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "air"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "chance": 0.08,
+            "density": 3,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 0,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "boulder/boulder1",
+                "boulder/boulder2",
+                "boulder/boulder4",
+                "boulder/boulder5",
+                "boulder/boulder6",
+                "boulder/boulder7",
+                "boulder/boulder8"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "place": [
+                "tree/acacia/1",
+                "tree/acacia/2",
+                "tree/acacia/3"
+            ],
+            "chance": 0.2,
+            "edit": [
+                {
+                    "find": [ { "block": "acacia_planks" } ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "acacia_wood",
+                                "data": { "axis": "y" }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "place": [
+                "tree/oak/1",
+                "tree/oak/2",
+                "tree/oak/3",
+                "tree/oak/4",
+                "tree/oak/5",
+                "tree/oak/6"
+            ],
+            "chance": 0.04,
+            "edit": [
+                {
+                    "find": [ { "block": "oak_leaves" } ],
+                    "replace": { "palette": [ { "block": "air" } ] }
+                },
+                {
+                    "find": [ { "block": "oak_log" } ],
+                    "replace": { "palette": [ { "block": "dark_oak_wood" } ] }
+                }
+            ]
+        }
+    ]
+}

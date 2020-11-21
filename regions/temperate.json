@@ -1,0 +1,46 @@
+{
+    "name": "Temperate",
+    "landBiomes": [
+        "temperate-plains",
+        "temperate-forest",
+        "temperate-birch-forest",
+        "temperate-mountains",
+        "temperate-plateau-crevice",
+        "temperate-marsh"
+    ],
+    "seaBiomes": [
+        "ocean",
+        "ocean-deep"
+    ],
+    "shoreBiomes": [
+        "beach"
+    ],
+    "biomeImplosionRatio": 1.0,
+    "rivers": true,
+    "riverBiomes": [
+        "river"
+    ],
+    "riverRarity": 1,
+    "riverStyle": {
+        "style": "FRACTAL_BILLOW_SIMPLEX",
+        "zoom": 10,
+        "exponent": 0.7,
+        "fracture": {
+            "style": "SIMPLEX",
+            "zoom": 1.5,
+            "exponent": 1.4,
+            "multiplier": 100,
+            "fracture": {
+                "style": "SIMPLEX",
+                "zoom": 0.5,
+                "multiplier": 20,
+                "fracture": {
+                    "style": "FRACTAL_BILLOW_SIMPLEX",
+                    "zoom": 0.4,
+                    "multiplier": 10
+                }
+            }
+        }
+    },
+    "riverThickness": 0.15
+}

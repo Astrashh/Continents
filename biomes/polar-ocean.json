@@ -1,0 +1,41 @@
+{
+    "name": "Polar Ocean",
+    "derivative": "FROZEN_OCEAN",
+    "vanillaDerivative": "FROZEN_OCEAN",
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "gravel"
+                }
+            ]
+        }
+    ],
+    "seaLayers": [
+        {
+            "maxHeight": 2,
+            "minHeight": 2,
+            "style": {
+                "style": "GLOB"
+            },
+            "zoom": 0.35,
+            "palette": [
+                {
+                    "weight": 5,
+                    "block": "ice"
+                },
+                {
+                    "weight": 2,
+                    "block": "water"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "ocean",
+            "max": -20,
+            "min": -20
+        }
+    ]
+}

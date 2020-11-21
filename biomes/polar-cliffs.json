@@ -1,0 +1,33 @@
+{
+    "name": "Polar Cliffs",
+    "derivative": "SNOWY_TUNDRA",
+    "vanillaDerivative": "SNOWY_TUNDRA",
+    "generators": [
+        {
+            "generator": "mesa-cliffs",
+            "max": 30,
+            "min": 7
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Plains",
+    "derivative": "SWAMP",
+    "vanillaDerivative": "SWAMP",
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "green_terracotta"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "flat",
+            "max": 5,
+            "min": 5
+        }
+    ]
+}

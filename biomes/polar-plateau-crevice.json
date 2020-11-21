@@ -1,0 +1,49 @@
+{
+    "name": "Polar Plateau Crevice",
+    "derivative": "SNOWY_TUNDRA",
+    "vanillaDerivative": "SNOWY_TUNDRA",
+    "children": [
+        "polar-plateau",
+        "polar-plateau-middle"
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 2.5,
+        "exponent": 3,
+        "fracture": {
+            "style": "BIOCTAVE_SIMPLEX",
+            "zoom": 1.3,
+            "multiplier": 30
+        }
+    },
+    "childShrinkFactor": 1,
+
+    "generators": [
+        {
+            "generator": "smooth-land-steep",
+            "max": 10,
+            "min": 2
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 10,
+            "maxHeight": 10,
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    }
+}

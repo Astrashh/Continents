@@ -1,0 +1,149 @@
+{
+    "name": "Polar Plains Hills",
+    "derivative": "SNOWY_TUNDRA",
+    "vanillaDerivative": "SNOWY_TUNDRA",
+    "rarity": 2,
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": 30,
+            "min": -10
+        },
+        {
+            "generator": "small-cliffs",
+            "min": -25,
+            "max": 0
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "ice"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "place": [
+                "landform/stone/1",
+                "landform/stone/2",
+                "landform/stone/3",
+                "landform/stone/4",
+                "landform/stone/5"
+            ],
+            "chance": 0.25,
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "grass_block"
+                        },
+                        {
+                            "block": "dirt"
+                        },
+                        {
+                            "block": "stone"
+                        },
+                        {
+                            "block": "andesite"
+                        },
+                        {
+                            "block": "stone_stairs"
+                        },
+                        {
+                            "block": "stone_slab"
+                        }
+                    ],
+                    "replace": {
+                        "style": {
+                            "style": "CELLULAR"
+                        },
+                        "zoom": 0.2,
+                        "palette": [
+                            {
+                                "block": "packed_ice"
+                            },
+                            {
+                                "block": "blue_ice"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "tall_grass"
+                        },
+                        {
+                            "block": "grass"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "air"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "place": [
+                "landform/stone/1",
+                "landform/stone/2",
+                "landform/stone/3",
+                "landform/stone/4",
+                "landform/stone/5"
+            ],
+            "chance": 0.25,
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "grass_block"
+                        },
+                        {
+                            "block": "dirt"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "snow_block"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "tall_grass"
+                        },
+                        {
+                            "block": "grass"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "air"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

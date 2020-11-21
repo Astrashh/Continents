@@ -1,0 +1,65 @@
+{
+    "name": "Desert",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "generators": [
+        {
+            "generator": "desert-dunes",
+            "max": 40,
+            "min": 5
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "style": {
+                "style": "FRACTAL_WATER"
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 1,
+                    "block": "sand"
+                },
+                {
+                    "weight": 1,
+                    "block": "smooth_sandstone"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.005,
+            "palette": [
+                {
+                    "block": "dead_bush"
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "tree/oak/1",
+                "tree/oak/2",
+                "tree/oak/3",
+                "tree/oak/4",
+                "tree/oak/5",
+                "tree/oak/6"
+            ],
+            "chance": 0.01,
+            "edit": [
+                {
+                    "find": [ { "block": "oak_leaves" } ],
+                    "replace": { "palette": [ { "block": "air" } ] }
+                },
+                {
+                    "find": [ { "block": "oak_log" } ],
+                    "replace": { "palette": [ { "block": "dark_oak_wood" } ] }
+                }
+            ]
+        }
+    ]
+}

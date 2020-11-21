@@ -1,0 +1,486 @@
+{
+    "gridHeight": 11,
+    "entityInitialSpawns": [],
+    "entitySpawnOverrides": [],
+    "maxLayers": 5,
+    "bore": true,
+    "wallStyle": {
+        "multiplier": 1,
+        "style": "STATIC",
+        "zoom": 1,
+        "maxFractureAccuracy": false,
+        "exponent": 1
+    },
+    "tiles": [
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "NEVER",
+            "objects": ["structure/mineshaft/cross-floor-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/t-connect-floor-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/hall-floor-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/corner-floor-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/room-floor-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/walled-room-floor-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "NEVER",
+            "objects": ["structure/mineshaft/cross-ceiling-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/t-connect-ceiling-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/hall-ceiling-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/corner-ceiling-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/room-ceiling-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/walled-room-ceiling-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "NEVER",
+            "objects": ["structure/mineshaft/cross-opening-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/t-connect-opening-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/hall-opening-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/corner-opening-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/room-opening-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "NEVER",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/walled-room-opening-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "NEVER"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "NEVER",
+            "objects": ["structure/mineshaft/cross-encased-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/t-connect-encased-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/hall-encased-1"],
+            "smartBore": false,
+            "east": "NEVER",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/corner-encased-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "NEVER",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "NEVER",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/room-encased-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        },
+        {
+            "ceiling": "REQUIRED",
+            "entityInitialSpawns": [],
+            "entitySpawnOverrides": [],
+            "placeMode": "CENTER_HEIGHT",
+            "south": "REQUIRED",
+            "north": "REQUIRED",
+            "objects": ["structure/mineshaft/walled-room-encased-1"],
+            "smartBore": false,
+            "east": "REQUIRED",
+            "rareObjects": [],
+            "west": "REQUIRED",
+            "loot": {
+                "mode": "ADD",
+                "tables": [],
+                "multiplier": 1
+            },
+            "floor": "REQUIRED"
+        }
+    ],
+    "gridSize": 11,
+    "wallChance": 0.35,
+    "name": "Mineshaft",
+    "underwater": false,
+    "loot": {
+        "mode": "ADD",
+        "tables": [],
+        "multiplier": 1
+    },
+    "clamp": {
+        "minimumHeight": 0,
+        "maximumHeight": 255
+    },
+    "mergeEdges": false
+}

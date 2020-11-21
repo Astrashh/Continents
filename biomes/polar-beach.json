@@ -1,0 +1,32 @@
+{
+    "name": "Polar Beach",
+    "derivative": "SNOWY_BEACH",
+    "vanillaDerivative": "SNOWY_BEACH",
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        }
+    ],
+    "seaLayers": [
+        {
+            "palette": [
+                {
+                    "block": "ice"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "flat",
+            "max": 0,
+            "min": 0
+        }
+    ]
+}

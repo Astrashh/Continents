@@ -1,0 +1,21 @@
+{
+    "name": "Tundra Ocean",
+    "derivative": "COLD_OCEAN",
+    "vanillaDerivative": "COLD_OCEAN",
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "gravel"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "ocean",
+            "max": -20,
+            "min": -20
+        }
+    ]
+}

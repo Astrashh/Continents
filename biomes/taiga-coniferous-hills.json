@@ -1,0 +1,171 @@
+{
+    "name": "Taiga Coniferous Hills",
+    "derivative": "TAIGA_HILLS",
+    "vanillaDerivative": "TAIGA_HILLS",
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": 30,
+            "min": -10
+        }
+    ],
+    "layers": [
+        {
+            "style": {
+                "style": "FRACTAL_WATER"
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 3,
+                    "block": "grass_block"
+                },
+                {
+                    "weight": 1,
+                    "block": "coarse_dirt"
+                },
+                {
+                    "weight": 1,
+                    "block": "podzol"
+                }
+            ]
+        },
+        {
+            "style": {
+                "style": "SIMPLEX"
+            },
+            "zoom": 0.5,
+            "maxHeight": 3,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "dirt"
+                },
+                {
+                    "block": "coarse_dirt"
+                },
+                {
+                    "block": "stone"
+                },
+                {
+                    "block": "andesite"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    },
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "air"
+                },
+                {
+                    "block": "sweet_berry_bush",
+                    "data": {
+                        "age": 1
+                    }
+                },
+                {
+                    "block": "sweet_berry_bush",
+                    "data": {
+                        "age": 2
+                    }
+                },
+                {
+                    "block": "sweet_berry_bush",
+                    "data": {
+                        "age": 3
+                    }
+                }
+            ],
+            "style": {
+                "style": "SIMPLEX"
+            },
+            "zoom": 0.2
+        },
+        {
+            "chance": 0.01,
+            "palette": [
+                {
+                    "block": "large_fern"
+                }
+            ]
+        },
+        {
+            "chance": 0.25,
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.7,
+                "exponent": 1.2,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 7
+                }
+            },
+            "palette": [
+                {
+                    "weight": 10,
+                    "block": "fern"
+                },
+                {
+                    "weight": 10,
+                    "block": "grass"
+                },
+                {
+                    "weight": 11,
+                    "block": "air"
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "tree/oak/1",
+                "tree/oak/2",
+                "tree/oak/3",
+                "tree/oak/4",
+                "tree/oak/5",
+                "tree/oak/6"
+            ],
+            "chance": 0.25,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "place": [
+                "tree/spruce/1"
+            ],
+            "chance": 1,
+            "density": 3,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}

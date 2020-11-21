@@ -1,0 +1,26 @@
+{
+    "name": "Tundra",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "flat",
+            "max": 5,
+            "min": 5
+        },
+        {
+            "generator": "cracks",
+            "min": 0,
+            "max": 1
+        }
+    ]
+}

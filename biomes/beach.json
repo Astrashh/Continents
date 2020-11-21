@@ -1,0 +1,23 @@
+{
+    "name": "Beach",
+    "derivative": "BEACH",
+    "vanillaDerivative": "BEACH",
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "block": "sand"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "generator": "flat",
+            "max": 0,
+            "min": 0
+        }
+    ]
+}

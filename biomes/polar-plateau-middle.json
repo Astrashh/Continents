@@ -1,0 +1,33 @@
+{
+    "name": "Polar Plateau Middle",
+    "derivative": "SNOWY_TUNDRA",
+    "vanillaDerivative": "SNOWY_TUNDRA",
+    "generators": [
+        {
+            "generator": "smooth-land-steep",
+            "max": 26,
+            "min": 11
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 10,
+            "maxHeight": 10,
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    }
+}
