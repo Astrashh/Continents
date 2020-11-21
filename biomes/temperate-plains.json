@@ -192,16 +192,6 @@
                     "max": 360
                 }
             }
-        },
-        {
-            "place": [
-                "folder_one/object",
-                "folder_one/folder_two/object",
-                "folder_one/folder_two/folder_3/object",
-                "folder_one/folder_two/object2"
-            ],
-            "chance": 1,
-            "density": 20
         }
     ]
 }
