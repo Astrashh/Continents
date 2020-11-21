@@ -1,2 +1,2 @@
 continents
-Example
+
