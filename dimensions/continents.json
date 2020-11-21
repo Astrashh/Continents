@@ -28,7 +28,7 @@
 
     "continentalStyle": {
         "zoom": 1,
-        "style": "SEXOCTAVE_FRACTAL_RM_SIMPLEX"
+        "style": "FRACTAL_RM_SIMPLEX"
     },
 
     "regionStyle": {
