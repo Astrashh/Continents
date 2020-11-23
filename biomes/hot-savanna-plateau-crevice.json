@@ -1,0 +1,129 @@
+{
+    "name": "Savanna Plateau Crevice",
+    "derivative": "SAVANNA_PLATEAU",
+    "vanillaDerivative": "SAVANNA_PLATEAU",
+    "children": [
+        "hot-savanna-plateau",
+        "hot-savanna-plateau-middle"
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 3.5,
+        "exponent": 4,
+        "fracture": {
+            "style": "BIOCTAVE_SIMPLEX",
+            "zoom": 1.3,
+            "multiplier": 30
+        }
+    },
+    "childShrinkFactor": 1,
+
+    "generators": [
+        {
+            "generator": "smooth-land-steep",
+            "max": 8,
+            "min": 3
+        }
+    ],
+    "layers": [
+        {
+            "palette": [
+                {
+                    "block": "grass_block"
+                }
+            ]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "dirt"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    },
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {
+                    "block": "white_tulip"
+                },
+                {
+                    "block": "red_tulip"
+                },
+                {
+                    "block": "orange_tulip"
+                },
+                {
+                    "block": "dandelion"
+                },
+                {
+                    "block": "poppy"
+                }
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [
+                {
+                    "block": "tall_grass"
+                }
+            ]
+        },
+        {
+            "chance": 0.5,
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.7,
+                "exponent": 1.2,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 7
+                }
+            },
+            "palette": [
+                {
+                    "weight": 20,
+                    "block": "grass"
+                },
+                {
+                    "weight": 11,
+                    "block": "air"
+                }
+            ]
+        }
+    ]
+}

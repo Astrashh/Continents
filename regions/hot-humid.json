@@ -1,7 +1,8 @@
 {
     "name": "Hot Humid",
     "landBiomes": [
-        "hot-savanna"
+        "hot-savanna",
+        "hot-savanna-plateau-crevice"
     ],
     "seaBiomes": [
         "ocean",
