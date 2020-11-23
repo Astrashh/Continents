@@ -14,17 +14,17 @@
         "polar"
     ],
 
-    "continentZoom": 3,
-    "regionZoom": 5,
+    "continentZoom": 1,
+    "regionZoom": 1,
     "biomeZoom": 1,
     "seaZoom": 1,
-    "landChance": 0.5,
+    "landChance": 1,
 
     "aggressiveBiomeReshuffle": false,
 
-    "terrainZoom": 1.0,
-    "rockZoom": 1.0,
-    "landZoom": 1.0,
+    "terrainZoom": 1,
+    "rockZoom": 1,
+    "landZoom": 1,
 
     "continentalStyle": {
         "zoom": 1,
@@ -32,7 +32,7 @@
     },
 
     "regionStyle": {
-        "zoom": 1,
+        "zoom": 7,
         "style": "SIMPLEX",
         "fracture": {
             "style": "SIMPLEX",

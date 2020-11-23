@@ -1,7 +1,8 @@
 {
     "name": "Tundra",
     "landBiomes": [
-        "tundra-mountains"
+        "tundra-mountains",
+        "tundra-coniferous"
     ],
     "seaBiomes": [
         "ocean",
