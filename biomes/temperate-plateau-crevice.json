@@ -50,6 +50,19 @@
                     "block": "dirt"
                 }
             ]
+        },
+        {
+            "style": {
+                "style": "STATIC"
+            },
+            "palette": [
+                {
+                    "block": "dirt"
+                },
+                {
+                    "block": "stone"
+                }
+            ]
         }
     ],
     "wall": {

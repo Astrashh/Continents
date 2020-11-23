@@ -39,7 +39,7 @@
             ]
         },
         {
-            "chance": 0.02,
+            "chance": 0.007,
             "palette": [
                 {
                     "block": "cactus"
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "chance": 0.01,
+            "chance": 0.007,
             "palette": [
                 {
                     "block": "cactus"

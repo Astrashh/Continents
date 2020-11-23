@@ -32,7 +32,7 @@
     },
 
     "regionStyle": {
-        "zoom": 7,
+        "zoom": 8,
         "style": "SIMPLEX",
         "fracture": {
             "style": "SIMPLEX",
@@ -51,12 +51,21 @@
     },
 
     "landBiomeStyle": {
-        "zoom": 2,
+        "zoom": 1.5,
         "style": "CELLULAR",
         "fracture": {
             "style": "SIMPLEX",
             "zoom": 1.2,
-            "multiplier": 0.0001
+            "multiplier": 50,
+            "fracture": {
+                "style": "GLOB",
+                "zoom": 0.3,
+                "multiplier": 30,
+                "fracture": {
+                    "style": "CUBIC",
+                    "multiplier": 4
+                }
+            }
         }
     },
 

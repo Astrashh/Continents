@@ -25,6 +25,21 @@
                     "block": "dirt"
                 }
             ]
+        },
+        {
+            "style": {
+                "style": "STATIC"
+            },
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "dirt"
+                },
+                {
+                    "block": "stone"
+                }
+            ]
         }
     ],
     "wall": {

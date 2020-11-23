@@ -28,10 +28,13 @@
                             "ZOMBIE_SPAWN_REINFORCEMENTS"
                         ]},
                         "enum-reg-biome": {"enum": [
+                            "hot-savanna-plateau-middle",
                             "temperate-plains-hills",
+                            "tundra-mountains-inclination",
                             "hot-mesa",
                             "polar-plains",
                             "tundra-mountains",
+                            "hot-savanna-plateau-crevice",
                             "hot-mesa-valleys",
                             "ocean-deep",
                             "polar-ocean",
@@ -49,6 +52,7 @@
                             "temperate-preview",
                             "tundra-coniferous-hills",
                             "warm-ocean",
+                            "hot-savanna-plateau",
                             "temperate-marsh-water",
                             "temperate-forest-hills",
                             "temperate-birch-forest-hills",
@@ -2267,6 +2271,10 @@
                                     "description": "dimension\nNo Field Description\n   \nIris Dimension\n\n* Default Value is \n* Minimum Length allowed is 1\nMust be a valid Dimension (use ctrl+space for auto complete!)",
                                     "type": "string",
                                     "$ref": "#/definitions/enum-reg-dimension"
+                                },
+                                "primary": {
+                                    "description": "primary\nOnly one dimension layer should be set to primary. The primary dimension layer is where players spawn, and the biomes that the vanilla structure system uses to figure out what structures to place.\n   \nBoolean\n\n* Default Value is a default object (create this object to see default properties)",
+                                    "type": "boolean"
                                 }
                             }
                         },
@@ -5885,10 +5893,13 @@
                             "ZOMBIE_SPAWN_REINFORCEMENTS"
                         ]},
                         "enum-reg-biome": {"enum": [
+                            "hot-savanna-plateau-middle",
                             "temperate-plains-hills",
+                            "tundra-mountains-inclination",
                             "hot-mesa",
                             "polar-plains",
                             "tundra-mountains",
+                            "hot-savanna-plateau-crevice",
                             "hot-mesa-valleys",
                             "ocean-deep",
                             "polar-ocean",
@@ -5906,6 +5917,7 @@
                             "temperate-preview",
                             "tundra-coniferous-hills",
                             "warm-ocean",
+                            "hot-savanna-plateau",
                             "temperate-marsh-water",
                             "temperate-forest-hills",
                             "temperate-birch-forest-hills",
@@ -6826,6 +6838,11 @@
                                     "type": "integer",
                                     "minimum": 0
                                 },
+                                "slopeCondition": {
+                                    "description": "slopeCondition\nIf set, this layer will change size depending on the slope. If in bounds, the layer will get larger (taller) the closer to the center of this slope clip it is. If outside of the slipe's bounds, this layer will not show.\n   \nSlopeClip (Object)\nTranslate objects\n* Default Value is a default object (create this object to see default properties)",
+                                    "type": "object",
+                                    "$ref": "#/definitions/obj-com-volmit-iris-object-irisslopeclip"
+                                },
                                 "maxHeight": {
                                     "maximum": 256,
                                     "description": "maxHeight\nThe max thickness of this layer\n   \nInteger\n\n* Default Value is 1\n* Minimum allowed is 1\n* Maximum allowed is 256",
@@ -6851,6 +6868,24 @@
                             }
                         },
                         "enum-reg-structure-tileset": {"enum": ["mineshaft"]},
+                        "obj-com-volmit-iris-object-irisslopeclip": {
+                            "description": "Translate objects",
+                            "type": "object",
+                            "properties": {
+                                "minimumSlope": {
+                                    "maximum": 255,
+                                    "description": "minimumSlope\nThe minimum slope for placement\n   \nNumber\n\n* Default Value is 0.0\n* Minimum allowed is 0.0\n* Maximum allowed is 255.0",
+                                    "type": "number",
+                                    "minimum": 0
+                                },
+                                "maximumSlope": {
+                                    "maximum": 255,
+                                    "description": "maximumSlope\nThe maximum slope for placement\n   \nNumber\n\n* Default Value is 10.0\n* Minimum allowed is 0.0\n* Maximum allowed is 255.0",
+                                    "type": "number",
+                                    "minimum": 0
+                                }
+                            }
+                        },
                         "obj-com-volmit-iris-object-irisgeneratorstyle": {
                             "description": "A gen style",
                             "type": "object",
@@ -10870,10 +10905,13 @@
                             "ZOMBIE_SPAWN_REINFORCEMENTS"
                         ]},
                         "enum-reg-biome": {"enum": [
+                            "hot-savanna-plateau-middle",
                             "temperate-plains-hills",
+                            "tundra-mountains-inclination",
                             "hot-mesa",
                             "polar-plains",
                             "tundra-mountains",
+                            "hot-savanna-plateau-crevice",
                             "hot-mesa-valleys",
                             "ocean-deep",
                             "polar-ocean",
@@ -10891,6 +10929,7 @@
                             "temperate-preview",
                             "tundra-coniferous-hills",
                             "warm-ocean",
+                            "hot-savanna-plateau",
                             "temperate-marsh-water",
                             "temperate-forest-hills",
                             "temperate-birch-forest-hills",
@@ -11811,6 +11850,11 @@
                                     "type": "integer",
                                     "minimum": 0
                                 },
+                                "slopeCondition": {
+                                    "description": "slopeCondition\nIf set, this layer will change size depending on the slope. If in bounds, the layer will get larger (taller) the closer to the center of this slope clip it is. If outside of the slipe's bounds, this layer will not show.\n   \nSlopeClip (Object)\nTranslate objects\n* Default Value is a default object (create this object to see default properties)",
+                                    "type": "object",
+                                    "$ref": "#/definitions/obj-com-volmit-iris-object-irisslopeclip"
+                                },
                                 "maxHeight": {
                                     "maximum": 256,
                                     "description": "maxHeight\nThe max thickness of this layer\n   \nInteger\n\n* Default Value is 1\n* Minimum allowed is 1\n* Maximum allowed is 256",
@@ -11836,6 +11880,24 @@
                             }
                         },
                         "enum-reg-structure-tileset": {"enum": ["mineshaft"]},
+                        "obj-com-volmit-iris-object-irisslopeclip": {
+                            "description": "Translate objects",
+                            "type": "object",
+                            "properties": {
+                                "minimumSlope": {
+                                    "maximum": 255,
+                                    "description": "minimumSlope\nThe minimum slope for placement\n   \nNumber\n\n* Default Value is 0.0\n* Minimum allowed is 0.0\n* Maximum allowed is 255.0",
+                                    "type": "number",
+                                    "minimum": 0
+                                },
+                                "maximumSlope": {
+                                    "maximum": 255,
+                                    "description": "maximumSlope\nThe maximum slope for placement\n   \nNumber\n\n* Default Value is 10.0\n* Minimum allowed is 0.0\n* Maximum allowed is 255.0",
+                                    "type": "number",
+                                    "minimum": 0
+                                }
+                            }
+                        },
                         "obj-com-volmit-iris-object-irisgeneratorstyle": {
                             "description": "A gen style",
                             "type": "object",
