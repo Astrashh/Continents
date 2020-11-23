@@ -1,0 +1,70 @@
+{
+    "name": "Tundra Mountains",
+    "derivative": "SNOWY_MOUNTAINS",
+    "vanillaDerivative": "SNOWY_MOUNTAINS",
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 5
+            },
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 1.0,
+                "fracture": {
+                    "style": "GLOB",
+                    "zoom": 0.25,
+                    "multiplier": 70,
+                    "fracture": {
+                        "style": "FRACTAL_WATER",
+                        "zoom": 1.4,
+                        "multiplier": 10
+                    }
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 6,
+                    "block": "snow_block"
+                },
+                {
+                    "weight": 5,
+                    "block": "stone"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    },
+    "generators": [
+        {
+            "generator": "mountainous",
+            "max": 90,
+            "min": 10
+        }
+    ]
+}
