@@ -22,45 +22,45 @@
     ],
     "layers": [
         {
-            "style": {
-                "style": "SIMPLEX",
-                "zoom": 1.0,
-                "fracture": {
-                    "style": "GLOB",
-                    "zoom": 0.25,
-                    "multiplier": 70,
-                    "fracture": {
-                        "style": "FRACTAL_WATER",
-                        "zoom": 1.4,
-                        "multiplier": 10
-                    }
-                }
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4
             },
-            "zoom": 0.7,
-            "maxHeight": 3,
-            "minHeight": 3,
             "palette": [
                 {
-                    "weight": 6,
                     "block": "grass_block"
-                },
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4
+            },
+            "palette": [
                 {
-                    "weight": 5,
-                    "block": "stone"
+                    "block": "dirt"
+                }
+            ]
+        },
+        {
+            "minHeight": 10,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 4,
+                "maximumSlope": 7
+            },
+            "palette": [
+                {
+                    "block": "granite"
                 }
             ]
         }
     ],
-    "wall": {
-        "palette": [
-            {
-                "block": "stone"
-            },
-            {
-                "block": "andesite"
-            }
-        ]
-    },
     "decorators": [
         {
             "chance": 0.2,

@@ -6,12 +6,7 @@
     "dimensionAngleDeg": 13,
 
     "regions": [
-        "hot",
-        "hot-humid",
-        "temperate",
-        "taiga",
-        "tundra",
-        "polar"
+        "temperate"
     ],
 
     "continentZoom": 1,
