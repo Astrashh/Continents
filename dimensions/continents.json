@@ -6,25 +6,20 @@
     "dimensionAngleDeg": 13,
 
     "regions": [
-        "hot",
-        "hot-humid",
-        "temperate",
-        "taiga",
-        "tundra",
-        "polar"
+        "temperate"
     ],
 
-    "continentZoom": 3,
-    "regionZoom": 5,
+    "continentZoom": 1,
+    "regionZoom": 1,
     "biomeZoom": 1,
     "seaZoom": 1,
-    "landChance": 0.5,
+    "landChance": 1,
 
     "aggressiveBiomeReshuffle": false,
 
-    "terrainZoom": 1.0,
-    "rockZoom": 1.0,
-    "landZoom": 1.0,
+    "terrainZoom": 1,
+    "rockZoom": 1,
+    "landZoom": 1,
 
     "continentalStyle": {
         "zoom": 1,
@@ -32,7 +27,7 @@
     },
 
     "regionStyle": {
-        "zoom": 1,
+        "zoom": 8,
         "style": "SIMPLEX",
         "fracture": {
             "style": "SIMPLEX",
@@ -51,12 +46,21 @@
     },
 
     "landBiomeStyle": {
-        "zoom": 2,
+        "zoom": 1.5,
         "style": "CELLULAR",
         "fracture": {
             "style": "SIMPLEX",
             "zoom": 1.2,
-            "multiplier": 0.0001
+            "multiplier": 50,
+            "fracture": {
+                "style": "GLOB",
+                "zoom": 0.3,
+                "multiplier": 30,
+                "fracture": {
+                    "style": "CUBIC",
+                    "multiplier": 4
+                }
+            }
         }
     },
 

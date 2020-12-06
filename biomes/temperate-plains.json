@@ -26,24 +26,26 @@
             ]
         },
         {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "block": "dirt"
+                }
+            ]
+        },
+        {
             "style": {
-                "style": "SIMPLEX"
+                "style": "STATIC"
             },
-            "zoom": 0.5,
-            "maxHeight": 3,
-            "minHeight": 3,
+            "minHeight": 1,
+            "maxHeight": 1,
             "palette": [
                 {
                     "block": "dirt"
                 },
                 {
-                    "block": "coarse_dirt"
-                },
-                {
                     "block": "stone"
-                },
-                {
-                    "block": "andesite"
                 }
             ]
         }

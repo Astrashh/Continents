@@ -42,7 +42,7 @@
                 "landform/stone/4",
                 "landform/stone/5"
             ],
-            "chance": 0.25,
+            "chance": 0.05,
             "edit": [
                 {
                     "find": [
@@ -107,7 +107,7 @@
                 "landform/stone/4",
                 "landform/stone/5"
             ],
-            "chance": 0.25,
+            "chance": 0.05,
             "edit": [
                 {
                     "find": [

@@ -1,11 +1,7 @@
 {
     "name": "Polar",
     "landBiomes": [
-        "polar-1",
-        "polar-plateau-crevice",
-        "polar-mountains",
-        "polar-plains",
-        "polar-cliffs"
+        "polar-plains"
     ],
     "seaBiomes": [
         "polar-ocean"

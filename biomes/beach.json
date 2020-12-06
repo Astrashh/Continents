@@ -4,8 +4,8 @@
     "vanillaDerivative": "BEACH",
     "layers": [
         {
-            "minHeight": 3,
-            "maxHeight": 3,
+            "minHeight": 4,
+            "maxHeight": 4,
             "palette": [
                 {
                     "block": "sand"

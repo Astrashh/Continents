@@ -4,6 +4,25 @@
     "vanillaDerivative": "SNOWY_MOUNTAINS",
     "layers": [
         {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.8
+            },
+            "palette": [
+                {
+                    "block": "snow_block"
+                }
+            ]
+        },
+        {
+            "maxHeight": 3,
+            "minHeight": 3,
+            "slopeCondition": {
+                "minimumSlope": 2.8,
+                "maximumSlope": 5.7
+            },
             "style": {
                 "style": "SIMPLEX",
                 "zoom": 1.0,
@@ -19,8 +38,6 @@
                 }
             },
             "zoom": 0.7,
-            "maxHeight": 5,
-            "minHeight": 5,
             "palette": [
                 {
                     "weight": 6,
