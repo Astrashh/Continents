@@ -1,10 +1,12 @@
 {
     "name": "Polar",
+    "rarity": 1,
     "landBiomes": [
         "polar-plains"
     ],
     "seaBiomes": [
-        "polar-ocean"
+        "polar-deep-ocean",
+        "ocean"
     ],
     "shoreBiomes": [
         "polar-beach"

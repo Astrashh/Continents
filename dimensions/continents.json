@@ -6,24 +6,33 @@
     "dimensionAngleDeg": 13,
 
     "regions": [
-        "temperate"
+        "hot",
+        "hot-humid",
+        "temperate",
+        "taiga",
+        "tundra",
+        "polar"
     ],
 
-    "continentZoom": 1,
-    "regionZoom": 1,
+    "continentZoom": 2.2,
+    "regionZoom": 1.4,
     "biomeZoom": 1,
     "seaZoom": 1,
-    "landChance": 1,
+    "landChance": 0.65,
 
     "aggressiveBiomeReshuffle": false,
 
     "terrainZoom": 1,
-    "rockZoom": 1,
     "landZoom": 1,
 
     "continentalStyle": {
-        "zoom": 1,
-        "style": "FRACTAL_RM_SIMPLEX"
+        "zoom": 8,
+        "style": "BIOCTAVE_FRACTAL_RM_SIMPLEX",
+        "fracture": {
+            "style": "FRACTAL_WATER",
+            "zoom": 0.8,
+            "multiplier": 50
+        }
     },
 
     "regionStyle": {
@@ -236,6 +245,28 @@
             "varience": 9
         }
     ],
+
+    "rockZoom": 0.3,
+    "rockPalette": {
+        "zoom": 0.3,
+        "palette": [
+            {
+                "weight": 2,
+                "block": "andesite"
+            },
+            {
+                "weight": 10,
+                "block": "stone"
+            },
+            {
+                "weight": 1,
+                "block": "granite"
+            }
+        ],
+        "style": {
+            "style": "CELLULAR_IRIS"
+        }
+    },
 
     "vanillaStructures": true,
     "placeObjects": true,

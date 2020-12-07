@@ -1,8 +1,9 @@
 {
     "name": "Tundra",
+    "rarity": 2,
     "landBiomes": [
-        "tundra-mountains-inclination",
-        "tundra-coniferous"
+        "tundra-coniferous",
+        "tundra-mountains"
     ],
     "seaBiomes": [
         "ocean",

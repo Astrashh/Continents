@@ -16,7 +16,7 @@
     "generators": [
         {
             "generator": "mountainous",
-            "max": 130,
+            "max": 100,
             "min": -30
         }
     ],
@@ -39,7 +39,7 @@
             "maxHeight": 3,
             "slopeCondition": {
                 "minimumSlope": 0,
-                "maximumSlope": 4
+                "maximumSlope": 3
             },
             "palette": [
                 {
@@ -48,10 +48,43 @@
             ]
         },
         {
-            "minHeight": 10,
-            "maxHeight": 10,
+            "maxHeight": 4,
+            "minHeight": 4,
             "slopeCondition": {
-                "minimumSlope": 4,
+                "minimumSlope": 3,
+                "maximumSlope": 4.5
+            },
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 1.0,
+                "fracture": {
+                    "style": "GLOB",
+                    "zoom": 0.25,
+                    "multiplier": 70,
+                    "fracture": {
+                        "style": "FRACTAL_WATER",
+                        "zoom": 1.4,
+                        "multiplier": 10
+                    }
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 6,
+                    "block": "granite"
+                },
+                {
+                    "weight": 5,
+                    "block": "stone"
+                }
+            ]
+        },
+        {
+            "minHeight": 7,
+            "maxHeight": 7,
+            "slopeCondition": {
+                "minimumSlope": 4.5,
                 "maximumSlope": 7
             },
             "palette": [
