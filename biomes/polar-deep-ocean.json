@@ -1,7 +1,7 @@
 {
-    "name": "Deep Ocean",
-    "derivative": "DEEP_OCEAN",
-    "vanillaDerivative": "DEEP_OCEAN",
+    "name": "Polar Deep Ocean",
+    "derivative": "DEEP_FROZEN_OCEAN",
+    "vanillaDerivative": "DEEP_FROZEN_OCEAN",
     "generators": [
         {
             "generator": "smooth-land",
@@ -36,6 +36,26 @@
             "palette": [
                 {
                     "block": "gravel"
+                }
+            ]
+        }
+    ],
+    "seaLayers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "style": {
+                "style": "GLOB"
+            },
+            "zoom": 0.4,
+            "palette": [
+                {
+                    "weight": 5,
+                    "block": "ice"
+                },
+                {
+                    "weight": 3,
+                    "block": "water"
                 }
             ]
         }

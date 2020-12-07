@@ -1,5 +1,6 @@
 {
     "name": "Temperate",
+    "rarity": 1,
     "landBiomes": [
         "temperate-plains",
         "temperate-forest",
@@ -11,6 +12,9 @@
     ],
     "shoreBiomes": [
         "beach"
+    ],
+    "caveBiomes": [
+        "temperate-old-cavern"
     ],
     "biomeImplosionRatio": 1.0,
     "rivers": true,

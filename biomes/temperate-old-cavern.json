@@ -1,0 +1,93 @@
+{
+    "name": "Old Cavern",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "style": {
+                "style": "STATIC"
+            },
+            "zoom": 0.1,
+            "palette": [
+                {
+                    "block": "stone"
+                },
+                {
+                    "block": "andesite"
+                }
+            ]
+        }
+    ],
+    "generators": [
+        {
+            "min": 4,
+            "max": 6,
+            "generator": "smooth-land"
+        }
+    ],
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "objects": [
+        {
+            "place": [
+                "dungeon/spawner-room"
+            ],
+            "carvingSupport": "ANYWHERE",
+            "chance": 1,
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "glass"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "cave_air"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "mossy_cobblestone"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "weight": 2,
+                                "block": "mossy_cobblestone"
+                            },
+                            {
+                                "weight": 1,
+                                "block": "cobblestone"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "stone"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "weight": 2,
+                                "block": "stone"
+                            },
+                            {
+                                "weight": 1,
+                                "block": "andesite"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

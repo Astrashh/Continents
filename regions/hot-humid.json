@@ -1,5 +1,6 @@
 {
     "name": "Hot Humid",
+    "rarity": 2,
     "landBiomes": [
         "hot-savanna",
         "hot-savanna-plateau-crevice"

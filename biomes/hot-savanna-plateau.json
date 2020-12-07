@@ -117,7 +117,7 @@
                 "tree/acacia/2",
                 "tree/acacia/3"
             ],
-            "chance": 0.1,
+            "chance": 1,
             "rotation": {
                 "enabled": true,
                 "yAxis": {

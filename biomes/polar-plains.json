@@ -45,6 +45,7 @@
                 "landform/stone/5"
             ],
             "chance": 0.05,
+            "mode":"FAST_MIN_HEIGHT",
             "edit": [
                 {
                     "find": [
@@ -110,6 +111,7 @@
                 "landform/stone/5"
             ],
             "chance": 0.05,
+            "mode":"FAST_MIN_HEIGHT",
             "edit": [
                 {
                     "find": [

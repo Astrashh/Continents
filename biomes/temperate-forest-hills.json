@@ -7,7 +7,7 @@
         {
             "generator": "smooth-land",
             "max": 50,
-            "min": 5
+            "min": -10
         },
         {
             "generator": "small-cliffs",
