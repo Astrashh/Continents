@@ -11,40 +11,21 @@
     ],
     "layers": [
         {
-            "style": {
-                "style": "FRACTAL_WATER"
-            },
-            "zoom": 0.7,
             "palette": [
                 {
-                    "weight": 3,
                     "block": "grass_block",
                     "data": {
                         "snowy": true
                     }
-                },
-                {
-                    "weight": 1,
-                    "block": "coarse_dirt"
-                },
-                {
-                    "weight": 1,
-                    "block": "podzol"
                 }
             ]
         },
         {
-            "style": {
-                "style": "STATIC"
-            },
-            "minHeight": 1,
-            "maxHeight": 1,
+            "minHeight": 2,
+            "maxHeight": 2,
             "palette": [
                 {
                     "block": "dirt"
-                },
-                {
-                    "block": "stone"
                 }
             ]
         }
@@ -169,7 +150,9 @@
         },
         {
             "place": [
-                "tree/spruce/1"
+                "tree/spruce/1",
+                "tree/spruce/2",
+                "tree/spruce/3"
             ],
             "chance": 1,
             "density": 3,

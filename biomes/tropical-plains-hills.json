@@ -1,33 +1,22 @@
 {
-    "name": "Temperate Mountains",
-    "derivative": "PLAINS",
-    "vanillaDerivative": "MOUNTAINS",
-    "biomeScatter": [
-        "PLAINS",
-        "FOREST"
-    ],
-    "biomeStyle": {
-        "style": "SIMPLEX"
-    },
-    "biomeZoom": 0.4,
-    "biomeSkyScatter": [
-        "MOUNTAINS"
-    ],
+    "name": "Tropical Plains Hills",
+    "derivative": "JUNGLE_HILLS",
+    "vanillaDerivative": "JUNGLE_HILLS",
+    "rarity": 2,
     "generators": [
         {
-            "generator": "mountainous",
-            "max": 100,
-            "min": -30
+            "generator": "smooth-land",
+            "max": 20,
+            "min": 3
+        },
+        {
+            "generator": "small-cliffs",
+            "min": -17,
+            "max": 0
         }
     ],
     "layers": [
         {
-            "minHeight": 1,
-            "maxHeight": 1,
-            "slopeCondition": {
-                "minimumSlope": 0,
-                "maximumSlope": 4
-            },
             "palette": [
                 {
                     "block": "grass_block"
@@ -35,12 +24,8 @@
             ]
         },
         {
-            "minHeight": 3,
-            "maxHeight": 3,
-            "slopeCondition": {
-                "minimumSlope": 0,
-                "maximumSlope": 3
-            },
+            "minHeight": 2,
+            "maxHeight": 2,
             "palette": [
                 {
                     "block": "dirt"
@@ -48,52 +33,31 @@
             ]
         },
         {
-            "maxHeight": 4,
-            "minHeight": 4,
-            "slopeCondition": {
-                "minimumSlope": 3,
-                "maximumSlope": 4.5
-            },
             "style": {
-                "style": "SIMPLEX",
-                "zoom": 1.0,
-                "fracture": {
-                    "style": "GLOB",
-                    "zoom": 0.25,
-                    "multiplier": 70,
-                    "fracture": {
-                        "style": "FRACTAL_WATER",
-                        "zoom": 1.4,
-                        "multiplier": 10
-                    }
-                }
+                "style": "STATIC"
             },
-            "zoom": 0.7,
+            "minHeight": 1,
+            "maxHeight": 1,
             "palette": [
                 {
-                    "weight": 6,
-                    "block": "granite"
+                    "block": "dirt"
                 },
                 {
-                    "weight": 5,
                     "block": "stone"
-                }
-            ]
-        },
-        {
-            "minHeight": 7,
-            "maxHeight": 7,
-            "slopeCondition": {
-                "minimumSlope": 4.5,
-                "maximumSlope": 7
-            },
-            "palette": [
-                {
-                    "block": "granite"
                 }
             ]
         }
     ],
+    "wall": {
+        "palette": [
+            {
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    },
     "decorators": [
         {
             "chance": 0.2,
@@ -167,7 +131,6 @@
         },
         {
             "chance": 0.5,
-            "forcePlace": false,
             "style": {
                 "style": "TRIOCTAVE_SIMPLEX",
                 "zoom": 0.7,
@@ -199,8 +162,7 @@
                 "tree/oak/5",
                 "tree/oak/6"
             ],
-            "chance": 1,
-            "density": 2,
+            "chance": 0.07,
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -209,19 +171,18 @@
                     "min": -360,
                     "max": 360
                 }
-            },
-            "clamp": {
-                "minimumHeight": 63,
-                "maximumHeight": 128
             }
         },
         {
             "place": [
-                "tree/spruce/1",
-                "tree/spruce/2",
-                "tree/spruce/3"
+                "landform/stone/1",
+                "landform/stone/2",
+                "landform/stone/3",
+                "landform/stone/4",
+                "landform/stone/5"
             ],
-            "chance": 0.7,
+            "chance": 0.02,
+            "mode": "MIN_HEIGHT",
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -230,10 +191,6 @@
                     "min": -360,
                     "max": 360
                 }
-            },
-            "clamp": {
-                "minimumHeight": 105,
-                "maximumHeight": 140
             }
         }
     ]

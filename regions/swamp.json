@@ -1,10 +1,8 @@
 {
-    "name": "Temperate",
-    "rarity": 1,
+    "name": "Swamp",
+    "rarity": 2,
     "landBiomes": [
-        "temperate-plains",
-        "temperate-forest",
-        "temperate-mountains"
+        "swamp-plains"
     ],
     "seaBiomes": [
         "ocean",

@@ -153,7 +153,9 @@
         },
         {
             "place": [
-                "tree/spruce/1"
+                "tree/spruce/1",
+                "tree/spruce/2",
+                "tree/spruce/3"
             ],
             "chance": 1,
             "density": 3,

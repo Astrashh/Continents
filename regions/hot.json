@@ -1,6 +1,6 @@
 {
     "name": "Hot",
-    "rarity": 1,
+    "rarity": 2,
     "landBiomes": [
         "hot-desert",
         "hot-red-desert",
@@ -8,7 +8,8 @@
     ],
     "seaBiomes": [
         "ocean",
-        "ocean-deep"
+        "ocean-deep",
+        "ocean-warm"
     ],
     "shoreBiomes": [
         "beach"

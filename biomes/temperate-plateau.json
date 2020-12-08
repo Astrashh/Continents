@@ -140,7 +140,9 @@
                 "tree/oak/4",
                 "tree/oak/5",
                 "tree/oak/6",
-                "tree/spruce/1"
+                "tree/spruce/1",
+                "tree/spruce/2",
+                "tree/spruce/3"
             ],
             "chance": 0.8,
             "rotation": {

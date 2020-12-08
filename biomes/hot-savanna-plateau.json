@@ -5,8 +5,8 @@
     "generators": [
         {
             "generator": "smooth-land-steep",
-            "max": 26,
-            "min": 11
+            "max": 15,
+            "min": 5
         }
     ],
     "layers": [

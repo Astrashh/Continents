@@ -6,19 +6,27 @@
     "dimensionAngleDeg": 13,
 
     "regions": [
-        "hot",
-        "hot-humid",
         "temperate",
         "taiga",
         "tundra",
-        "polar"
+        "polar",
+        "tundra",
+        "taiga",
+        "temperate",
+        "tropical",
+        "hot-humid",
+        "hot",
+        "hot-humid",
+        "tropical",
+        "temperate",
+        "swamp"
     ],
 
-    "continentZoom": 2.2,
-    "regionZoom": 1.4,
-    "biomeZoom": 1,
+    "continentZoom": 1,
+    "regionZoom": 6,
+    "biomeZoom": 0.7,
     "seaZoom": 1,
-    "landChance": 0.65,
+    "landChance": 1,
 
     "aggressiveBiomeReshuffle": false,
 
@@ -26,7 +34,7 @@
     "landZoom": 1,
 
     "continentalStyle": {
-        "zoom": 8,
+        "zoom": 1,
         "style": "BIOCTAVE_FRACTAL_RM_SIMPLEX",
         "fracture": {
             "style": "FRACTAL_WATER",
@@ -36,39 +44,29 @@
     },
 
     "regionStyle": {
-        "zoom": 8,
+        "zoom": 10,
         "style": "SIMPLEX",
         "fracture": {
-            "style": "SIMPLEX",
-            "zoom": 1.2,
-            "multiplier": 50,
+            "multiplier": 24,
+            "style": "FRACTAL_WATER",
+            "zoom": 0.655,
             "fracture": {
-                "style": "GLOB",
-                "zoom": 0.3,
-                "multiplier": 30,
-                "fracture": {
-                    "style": "CUBIC",
-                    "multiplier": 4
-                }
+                "style": "STATIC",
+                "multiplier": 4
             }
         }
     },
 
     "landBiomeStyle": {
-        "zoom": 1.5,
+        "zoom": 1,
         "style": "CELLULAR",
         "fracture": {
-            "style": "SIMPLEX",
-            "zoom": 1.2,
-            "multiplier": 50,
+            "multiplier": 24,
+            "style": "FRACTAL_WATER",
+            "zoom": 0.655,
             "fracture": {
-                "style": "GLOB",
-                "zoom": 0.3,
-                "multiplier": 30,
-                "fracture": {
-                    "style": "CUBIC",
-                    "multiplier": 4
-                }
+                "style": "STATIC",
+                "multiplier": 4
             }
         }
     },
@@ -246,7 +244,7 @@
         }
     ],
 
-    "rockZoom": 0.3,
+    "rockZoom": 0.1,
     "rockPalette": {
         "zoom": 0.3,
         "palette": [
@@ -255,7 +253,7 @@
                 "block": "andesite"
             },
             {
-                "weight": 10,
+                "weight": 8,
                 "block": "stone"
             },
             {

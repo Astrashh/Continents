@@ -1,12 +1,13 @@
 {
     "name": "Taiga",
-    "rarity": 1,
+    "rarity": 2,
     "landBiomes": [
         "taiga-coniferous"
     ],
     "seaBiomes": [
         "ocean",
-        "ocean-deep"
+        "ocean-deep",
+        "ocean-warm"
     ],
     "shoreBiomes": [
         "beach"

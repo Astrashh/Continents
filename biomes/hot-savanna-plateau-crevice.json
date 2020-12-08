@@ -4,8 +4,8 @@
     "vanillaDerivative": "SAVANNA_PLATEAU",
     "rarity": 2,
     "children": [
-        "hot-savanna-plateau-middle",
-        "hot-savanna-plateau"
+        "hot-savanna-plateau",
+        "hot-savanna-plateau-middle"
     ],
     "childStyle": {
         "style": "GLOB",

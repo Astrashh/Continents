@@ -1,0 +1,104 @@
+{
+    "name": "Polar Spikes Hills",
+    "derivative": "ICE_SPIKES",
+    "vanillaDerivative": "ICE_SPIKES",
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": 50,
+            "min": -20
+        },
+        {
+            "generator": "mesa-cliffs",
+            "min": 35,
+            "max": 0
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "style": {
+                "style": "FRACTAL_SMOKE",
+                "zoom": 0.04
+            },
+            "palette": [
+                {
+                    "block": "snow_block"
+                },
+                {
+                    "block": "blue_ice"
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "landform/stone/1",
+                "landform/stone/2",
+                "landform/stone/3",
+                "landform/stone/4",
+                "landform/stone/5"
+            ],
+            "chance": 1,
+            "density": 3,
+            "mode":"FAST_MIN_HEIGHT",
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "grass_block"
+                        },
+                        {
+                            "block": "dirt"
+                        },
+                        {
+                            "block": "stone"
+                        },
+                        {
+                            "block": "andesite"
+                        },
+                        {
+                            "block": "stone_stairs"
+                        },
+                        {
+                            "block": "stone_slab"
+                        }
+                    ],
+                    "replace": {
+                        "style": {
+                            "style": "CELLULAR"
+                        },
+                        "zoom": 0.2,
+                        "palette": [
+                            {
+                                "block": "packed_ice"
+                            },
+                            {
+                                "block": "blue_ice"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "tall_grass"
+                        },
+                        {
+                            "block": "grass"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "air"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

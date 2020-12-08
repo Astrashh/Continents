@@ -1,0 +1,48 @@
+{
+    "name": "Stepped Cliffs Lava",
+    "derivative": "THE_VOID",
+    "vanillaDerivative": "THE_VOID",
+    "generators": [
+        {
+            "generator": "mesa-cliffs",
+            "min": 30,
+            "max": 61
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "lava",
+                    "data": {
+                        "level": 0
+                    }
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "lava",
+                    "data": {
+                        "level": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "block": "lava",
+                "data": {
+                    "level": 1
+                }
+            }
+        ]
+    }
+}

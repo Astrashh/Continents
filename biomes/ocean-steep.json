@@ -128,6 +128,39 @@
                     }
                 }
             ]
+        },
+        {
+            "place": [
+                "landform/underwater/ellipsoid-1"
+            ],
+            "chance": 0.5,
+            "underwater": true,
+            "mode": "CENTER_HEIGHT",
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "clay"
+                        }
+                    ],
+                    "replace": {
+                        "style": {
+                            "style": "GLOB",
+                            "zoom": 0.02
+                        },
+                        "palette": [
+                            {
+                                "weight": 2,
+                                "block": "clay"
+                            },
+                            {
+                                "weight": 1,
+                                "block": "cave_air"
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,60 @@
+{
+    "name": "Stepped Cliffs",
+    "derivative": "THE_VOID",
+    "vanillaDerivative": "THE_VOID",
+    "children": [
+        "tropical-volcanic-lava"
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.2,
+        "exponent": 4
+    },
+    "childShrinkFactor": 1,
+    "generators": [
+        {
+            "generator": "mesa-cliffs",
+            "min": 33,
+            "max": 65
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "palette": [
+                {
+                    "weight": 1,
+                    "block": "basalt"
+                }
+            ]
+        }
+    ],
+    "wall": {
+        "palette": [
+            {
+                "weight": 20,
+                "block": "basalt"
+            }
+        ]
+    },
+    "decorators": [
+        {
+            "chance": 0.5,
+            "style": {
+                "style": "SIMPLEX"
+            },
+            "zoom": 0.3,
+            "palette": [
+                {
+                    "block": "basalt"
+                }
+            ],
+            "stackMin": 1,
+            "stackMax": 4,
+            "variance": {
+                "style": "STATIC"
+            }
+        }
+    ]
+}

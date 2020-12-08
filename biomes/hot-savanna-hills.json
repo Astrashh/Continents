@@ -2,7 +2,7 @@
     "name": "Savanna Hills",
     "derivative": "SAVANNA",
     "vanillaDerivative": "SAVANNA",
-    "rarity": 3,
+    "rarity": 2,
     "generators": [
         {
             "generator": "smooth-land",
@@ -11,7 +11,7 @@
         },
         {
             "generator": "small-cliffs",
-            "min": -20,
+            "min": -25,
             "max": 0
         }
     ],

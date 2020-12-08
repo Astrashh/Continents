@@ -1,25 +1,25 @@
 {
-    "name": "Tundra Coniferous",
-    "derivative": "SNOWY_TAIGA",
-    "vanillaDerivative": "SNOWY_TAIGA_HILLS",
-    "children": [
-        "tundra-coniferous-hills"
-    ],
+    "name": "Swamp Hills",
+    "derivative": "SWAMP",
+    "vanillaDerivative": "SWAMP",
+    "rarity": 3,
     "generators": [
         {
             "generator": "smooth-land",
             "max": 20,
-            "min": -10
+            "min": 3
+        },
+        {
+            "generator": "small-cliffs",
+            "min": -17,
+            "max": 0
         }
     ],
     "layers": [
         {
             "palette": [
                 {
-                    "block": "grass_block",
-                    "data": {
-                        "snowy": true
-                    }
+                    "block": "grass_block"
                 }
             ]
         },
@@ -31,57 +31,44 @@
                     "block": "dirt"
                 }
             ]
+        },
+        {
+            "style": {
+                "style": "STATIC"
+            },
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "dirt"
+                },
+                {
+                    "block": "stone"
+                }
+            ]
         }
     ],
     "wall": {
         "palette": [
             {
-                "block": "ice"
+                "block": "stone"
+            },
+            {
+                "block": "andesite"
             }
         ]
     },
     "decorators": [
         {
-            "chance": 0.05,
-            "palette": [
-                {
-                    "weight": 2,
-                    "block": "air"
-                },
-                {
-                    "block": "sweet_berry_bush",
-                    "data": {
-                        "age": 1
-                    }
-                },
-                {
-                    "block": "sweet_berry_bush",
-                    "data": {
-                        "age": 2
-                    }
-                },
-                {
-                    "block": "sweet_berry_bush",
-                    "data": {
-                        "age": 3
-                    }
-                }
-            ],
-            "style": {
-                "style": "SIMPLEX"
-            },
-            "zoom": 0.2
-        },
-        {
             "chance": 0.01,
             "palette": [
                 {
-                    "block": "large_fern"
+                    "block": "tall_grass"
                 }
             ]
         },
         {
-            "chance": 0.25,
+            "chance": 0.5,
             "style": {
                 "style": "TRIOCTAVE_SIMPLEX",
                 "zoom": 0.7,
@@ -93,27 +80,12 @@
             },
             "palette": [
                 {
-                    "weight": 10,
-                    "block": "fern"
-                },
-                {
-                    "weight": 10,
+                    "weight": 20,
                     "block": "grass"
                 },
                 {
                     "weight": 11,
                     "block": "air"
-                }
-            ]
-        },
-        {
-            "chance": 1,
-            "palette": [
-                {
-                    "block": "snow",
-                    "data": {
-                        "layers": 1
-                    }
                 }
             ]
         }
@@ -128,7 +100,7 @@
                 "tree/oak/5",
                 "tree/oak/6"
             ],
-            "chance": 0.25,
+            "chance": 0.07,
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -137,17 +109,18 @@
                     "min": -360,
                     "max": 360
                 }
-            },
-            "snow": 0.4
+            }
         },
         {
             "place": [
-                "tree/spruce/1",
-                "tree/spruce/2",
-                "tree/spruce/3"
+                "landform/stone/1",
+                "landform/stone/2",
+                "landform/stone/3",
+                "landform/stone/4",
+                "landform/stone/5"
             ],
-            "chance": 1,
-            "density": 3,
+            "chance": 0.02,
+            "mode": "MIN_HEIGHT",
             "rotation": {
                 "enabled": true,
                 "yAxis": {
@@ -156,8 +129,7 @@
                     "min": -360,
                     "max": 360
                 }
-            },
-            "snow": 0.4
+            }
         }
     ]
 }
