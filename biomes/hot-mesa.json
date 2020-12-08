@@ -26,7 +26,7 @@
         {
             "min": 25,
             "max": 60,
-            "generator": "mesa-cliffs"
+            "generator": "cracked-cliffs"
         }
     ],
     "layers": [

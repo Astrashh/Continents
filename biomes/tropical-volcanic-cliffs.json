@@ -13,31 +13,55 @@
     "childShrinkFactor": 1,
     "generators": [
         {
-            "generator": "mesa-cliffs",
+            "generator": "mountainous",
             "min": 33,
-            "max": 65
+            "max": 105
         }
     ],
     "layers": [
         {
-            "minHeight": 5,
-            "maxHeight": 5,
+            "minHeight": 1,
+            "maxHeight": 1,
             "palette": [
                 {
-                    "weight": 1,
                     "block": "basalt"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "block": "basalt",
+                    "data": {
+                        "axis": "x"
+                    }
+                },
+                {
+                    "block": "basalt",
+                    "data": {
+                        "axis": "y"
+                    }
+                },
+                {
+                    "block": "basalt",
+                    "data": {
+                        "axis": "z"
+                    }
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "palette": [
+                {
+                    "block": "blackstone"
                 }
             ]
         }
     ],
-    "wall": {
-        "palette": [
-            {
-                "weight": 20,
-                "block": "basalt"
-            }
-        ]
-    },
     "decorators": [
         {
             "chance": 0.5,

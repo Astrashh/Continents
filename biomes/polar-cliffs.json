@@ -4,7 +4,7 @@
     "vanillaDerivative": "SNOWY_TUNDRA",
     "generators": [
         {
-            "generator": "mesa-cliffs",
+            "generator": "cracked-cliffs",
             "max": 30,
             "min": 7
         }

@@ -4,9 +4,9 @@
     "vanillaDerivative": "THE_VOID",
     "generators": [
         {
-            "generator": "mesa-cliffs",
+            "generator": "mountainous",
             "min": 30,
-            "max": 61
+            "max": 111
         }
     ],
     "layers": [
