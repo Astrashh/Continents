@@ -1,20 +1,17 @@
 {
-    "name": "Desert Hills",
+    "name": "Desert",
     "derivative": "DESERT",
     "vanillaDerivative": "DESERT",
-    "children": [
-        "hot-desert-hills"
-    ],
-    "childStyle": {
-        "style": "SIMPLEX",
-        "zoom": 1.2
-    },
-    "childShrinkFactor": 1.0,
     "generators": [
         {
-            "generator": "desert-dunes",
-            "max": 30,
-            "min": 1
+            "generator": "mountainous",
+            "max": 25,
+            "min": 10
+        },
+        {
+            "generator": "small-cliffs",
+            "min": 0,
+            "max": 10
         }
     ],
     "layers": [
@@ -79,38 +76,6 @@
                 {
                     "find": [ { "block": "oak_log" } ],
                     "replace": { "palette": [ { "block": "dark_oak_wood" } ] }
-                }
-            ]
-        },
-        {
-            "place": [
-                "desert/hut"
-            ],
-            "chance": 1,
-            "mode": "STILT",
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            },
-            "edit": [
-                {
-                    "find": [
-                        {
-                            "block": "glass"
-                        }
-                    ],
-                    "replace": {
-                        "palette": [
-                            {
-                                "block": "cave_air"
-                            }
-                        ]
-                    }
                 }
             ]
         }

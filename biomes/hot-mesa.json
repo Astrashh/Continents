@@ -193,5 +193,25 @@
     ],
     "biomeStyle": {
         "style": "IRIS"
-    }
+    },
+    "objects": [
+        {
+            "place": [
+                "desert/tower",
+                "desert/tower-twin"
+            ],
+            "chance": 0.1,
+            "density": 2,
+            "mode": "FAST_STILT",
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
 }

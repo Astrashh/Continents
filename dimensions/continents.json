@@ -2,31 +2,19 @@
     "name": "Continents",
     "version": 1,
     "environment": "NORMAL",
-    "fluidHeight": 100,
+    "fluidHeight": 63,
     "dimensionAngleDeg": 13,
 
     "regions": [
-        "temperate",
-        "taiga",
-        "tundra",
-        "polar",
-        "tundra",
-        "taiga",
-        "temperate",
-        "tropical",
-        "hot-humid",
         "hot",
-        "hot-humid",
-        "tropical",
-        "temperate",
-        "swamp"
+        "temperate"
     ],
 
-    "continentZoom": 1,
-    "regionZoom": 6,
+    "continentZoom": 2,
+    "regionZoom": 2,
     "biomeZoom": 0.7,
     "seaZoom": 1,
-    "landChance": 1,
+    "landChance": 0.7,
 
     "aggressiveBiomeReshuffle": false,
 
@@ -34,7 +22,7 @@
     "landZoom": 1,
 
     "continentalStyle": {
-        "zoom": 1,
+        "zoom": 4,
         "style": "BIOCTAVE_FRACTAL_RM_SIMPLEX",
         "fracture": {
             "style": "FRACTAL_WATER",
@@ -87,69 +75,22 @@
     "caves": true,
     "caveLayers": [
         {
-            "canBreakSurface": false,
-            "horizontalSlope": {
-                "min": -110,
-                "max": 110,
-                "generator": {
-                    "style": "IRIS_THICK",
-                    "fracture": {
-                        "multiplier": 9,
-                        "style": "IRIS_THICK",
-                        "zoom": 0.3
-                    }
-                }
-            },
-            "caveThickness": 2,
-            "caveZoom": 1.25,
-            "verticalSlope": {
-                "min": 6,
-                "max": 82,
-                "generator": {
-                    "style": "IRIS",
-                    "fracture": {
-                        "multiplier": 9,
-                        "style": "IRIS_THICK",
-                        "zoom": 0.3
-                    }
-                }
-            }
-        },
-        {
             "canBreakSurface": true,
+            "caveThickness": 0.5,
+            "caveZoom": 1.0,
             "horizontalSlope": {
-                "min": -10,
-                "max": 10,
                 "generator": {
-                    "style": "IRIS_THICK",
-                    "zoom": 0.885,
-                    "fracture": {
-                        "multiplier": 9,
-                        "style": "IRIS_THICK",
-                        "zoom": 0.3
-                    }
-                }
-            },
-            "caveThickness": 0.7,
-            "caveZoom": 0.89,
-            "verticalSlope": {
-                "min": 68,
-                "max": 196,
-                "generator": {
-                    "style": "IRIS_DOUBLE",
-                    "zoom": 1.82,
-                    "fracture": {
-                        "multiplier": 9,
-                        "style": "IRIS_THICK",
-                        "zoom": 0.3
-                    }
-                }
-            },
-            "fluid": {
-                "fluidType": {
-                    "block": "lava"
+                    "style": "SIMPLEX"
                 },
-                "fluidHeight": 8
+                "min": -20,
+                "max": 20
+            },
+            "verticalSlope": {
+                "generator": {
+                    "style": "SIMPLEX"
+                },
+                "min": 20,
+                "max": 20
             }
         }
     ],

@@ -11,6 +11,23 @@
     ],
     "layers": [
         {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 2,
+                "maximumSlope": 10
+            },
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2
+            },
             "style": {
                 "style": "SIMPLEX",
                 "zoom": 1.4,
@@ -25,8 +42,8 @@
                 }
             },
             "zoom": 0.9,
-            "minHeight": 2,
-            "maxHeight": 2,
+            "minHeight": 1,
+            "maxHeight": 1,
             "palette": [
                 {
                     "weight": 3,
@@ -183,108 +200,14 @@
         },
         {
             "chance": 0.5,
-            "style": {
-                "style": "TRIOCTAVE_SIMPLEX",
-                "zoom": 0.7,
-                "exponent": 1.2,
-                "fracture": {
-                    "style": "STATIC",
-                    "multiplier": 7
-                }
-            },
             "palette": [
                 {
-                    "weight": 20,
                     "block": "grass"
-                },
-                {
-                    "weight": 11,
-                    "block": "air"
                 }
             ]
         }
     ],
     "objects": [
-        {
-            "edit": [
-                {
-                    "find": [
-                        {
-                            "block": "mossy_cobblestone"
-                        },
-                        {
-                            "block": "cobblestone"
-                        }
-                    ],
-                    "replace": {
-                        "palette": [
-                            {
-                                "block": "andesite"
-                            },
-                            {
-                                "block": "stone"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "find": [
-                        {
-                            "block": "cobblestone_slab"
-                        }
-                    ],
-                    "replace": {
-                        "palette": [
-                            {
-                                "block": "stone_slab",
-                                "data": {
-                                    "type": "bottom"
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "find": [
-                        {
-                            "block": "vine"
-                        }
-                    ],
-                    "replace": {
-                        "palette": [
-                            {
-                                "block": "air"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "chance": 0.08,
-            "density": 3,
-            "rotation": {
-                "yAxis": {
-                    "min": 0,
-                    "max": 0,
-                    "interval": 90,
-                    "enabled": true
-                },
-                "enabled": true
-            },
-            "place": [
-                "boulder/boulder1",
-                "boulder/boulder2",
-                "boulder/boulder4",
-                "boulder/boulder5",
-                "boulder/boulder6",
-                "boulder/boulder7",
-                "boulder/boulder8"
-            ],
-            "translate": {
-                "x": 0,
-                "y": -1,
-                "z": 0
-            }
-        },
         {
             "place": [
                 "tree/acacia/1",

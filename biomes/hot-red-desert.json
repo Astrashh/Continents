@@ -5,8 +5,8 @@
     "generators": [
         {
             "generator": "desert-dunes",
-            "max": 40,
-            "min": 5
+            "max": 30,
+            "min": 1
         }
     ],
     "layers": [
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "chance": 0.007,
+            "chance": 0.01,
             "palette": [
                 {
                     "block": "cactus"
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "chance": 0.007,
+            "chance": 0.01,
             "palette": [
                 {
                     "block": "cactus"

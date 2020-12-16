@@ -161,6 +161,17 @@
                     }
                 }
             ]
+        },
+        {
+            "place": [
+                "shipwreck/with-mast"
+            ],
+            "chance": 1,
+            "onwater": true,
+            "translate": {
+                "y": -1
+            },
+            "waterloggable": true
         }
     ]
 }

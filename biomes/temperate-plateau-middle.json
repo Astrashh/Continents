@@ -125,23 +125,9 @@
         },
         {
             "chance": 0.5,
-            "style": {
-                "style": "TRIOCTAVE_SIMPLEX",
-                "zoom": 0.7,
-                "exponent": 1.2,
-                "fracture": {
-                    "style": "STATIC",
-                    "multiplier": 7
-                }
-            },
             "palette": [
                 {
-                    "weight": 20,
                     "block": "grass"
-                },
-                {
-                    "weight": 11,
-                    "block": "air"
                 }
             ]
         }

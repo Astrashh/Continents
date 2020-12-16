@@ -3,7 +3,8 @@
     "rarity": 2,
     "landBiomes": [
         "tropical-plains",
-        "tropical-volcanic-plains"
+        "tropical-volcanic-plains",
+        "tropical-stepped-cliffs"
     ],
     "seaBiomes": [
         "ocean",

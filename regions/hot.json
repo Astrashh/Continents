@@ -7,8 +7,6 @@
         "hot-mesa"
     ],
     "seaBiomes": [
-        "ocean",
-        "ocean-deep",
         "ocean-warm"
     ],
     "shoreBiomes": [

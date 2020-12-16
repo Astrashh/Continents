@@ -6,7 +6,7 @@
         {
             "generator": "ocean-steep",
             "max": -30,
-            "min": -50
+            "min": -40
         }
     ],
     "layers": [
@@ -21,34 +21,6 @@
         }
     ],
     "decorators": [
-        {
-            "style": {
-                "style": "GLOB",
-                "zoom": 1,
-                "exponent": 1.5,
-                "fracture": {
-                    "style": "GLOB",
-                    "zoom": 0.1,
-                    "multiplier": 50
-                }
-            },
-            "chance": 0.1,
-            "variance": {
-                "style": "GLOB",
-                "zoom": 0.07,
-                "exponent": 1.6
-            },
-            "palette": [
-                {
-                    "weight": 3,
-                    "block": "obsidian"
-                },
-                {
-                    "weight": 1,
-                    "block": "soul_sand"
-                }
-            ]
-        },
         {
             "chance": 0.05,
             "style": {
@@ -270,7 +242,7 @@
             "underwater": true,
             "mode": "CENTER_HEIGHT",
             "clamp": {
-                "minimumHeight": 58,
+                "minimumHeight": 30,
                 "maximumHeight": 255
             },
             "edit": [
@@ -298,6 +270,17 @@
                     }
                 }
             ]
+        },
+        {
+            "place": [
+                "shipwreck/with-mast"
+            ],
+            "chance": 1,
+            "onwater": true,
+            "translate": {
+                "y": -1
+            },
+            "waterloggable": true
         }
     ]
 }

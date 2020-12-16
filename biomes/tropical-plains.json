@@ -14,7 +14,7 @@
         {
             "generator": "smooth-land",
             "max": 20,
-            "min": 3
+            "min": -10
         }
     ],
     "layers": [
@@ -133,23 +133,9 @@
         },
         {
             "chance": 0.5,
-            "style": {
-                "style": "TRIOCTAVE_SIMPLEX",
-                "zoom": 0.7,
-                "exponent": 1.2,
-                "fracture": {
-                    "style": "STATIC",
-                    "multiplier": 7
-                }
-            },
             "palette": [
                 {
-                    "weight": 20,
                     "block": "grass"
-                },
-                {
-                    "weight": 11,
-                    "block": "air"
                 }
             ]
         }
@@ -157,34 +143,17 @@
     "objects": [
         {
             "place": [
-                "tree/oak/1",
-                "tree/oak/2",
-                "tree/oak/3",
-                "tree/oak/4",
-                "tree/oak/5",
-                "tree/oak/6"
+                "tree/jungle/1",
+                "tree/jungle/2",
+                "tree/jungle/3",
+                "tree/jungle/4",
+                "tree/jungle/5",
+                "tree/jungle/6",
+                "tree/jungle/7",
+                "tree/jungle/8",
+                "tree/jungle/9"
             ],
-            "chance": 0.07,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            }
-        },
-        {
-            "place": [
-                "landform/stone/1",
-                "landform/stone/2",
-                "landform/stone/3",
-                "landform/stone/4",
-                "landform/stone/5"
-            ],
-            "chance": 0.02,
-            "mode": "MIN_HEIGHT",
+            "chance": 1,
             "rotation": {
                 "enabled": true,
                 "yAxis": {

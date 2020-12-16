@@ -13,6 +13,19 @@
             ]
         }
     ],
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [
+                {
+                    "block": "sugar_cane"
+                }
+            ],
+            "stackMin": 1,
+            "stackMax": 5,
+            "partOf": "SHORE_LINE"
+        }
+    ],
     "generators": [
         {
             "generator": "flat",
