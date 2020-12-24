@@ -2,7 +2,8 @@
     "name": "Taiga",
     "rarity": 2,
     "landBiomes": [
-        "taiga-coniferous"
+        "taiga-coniferous",
+        "taiga-mountains"
     ],
     "seaBiomes": [
         "ocean",

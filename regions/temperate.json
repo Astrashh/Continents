@@ -4,6 +4,7 @@
     "landBiomes": [
         "temperate-plains",
         "temperate-forest",
+        "temperate-birch-forest",
         "temperate-mountains"
     ],
     "seaBiomes": [

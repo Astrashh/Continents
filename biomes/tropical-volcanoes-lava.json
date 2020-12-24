@@ -1,24 +1,21 @@
 {
-    "name": "Stepped Cliffs Lava",
+    "name": "Volcanoes Lava",
     "derivative": "THE_VOID",
     "vanillaDerivative": "THE_VOID",
     "generators": [
         {
             "generator": "mountainous",
-            "min": 30,
-            "max": 111
+            "min": 33,
+            "max": 105
         }
     ],
     "layers": [
         {
-            "minHeight": 1,
-            "maxHeight": 1,
+            "minHeight": 2,
+            "maxHeight": 3,
             "palette": [
                 {
-                    "block": "lava",
-                    "data": {
-                        "level": 0
-                    }
+                    "block": "cave_air"
                 }
             ]
         },
@@ -30,6 +27,18 @@
                     "block": "lava",
                     "data": {
                         "level": 1
+                    }
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 10,
+            "palette": [
+                {
+                    "block": "lava",
+                    "data": {
+                        "level": 0
                     }
                 }
             ]

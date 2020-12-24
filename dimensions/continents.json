@@ -7,12 +7,16 @@
 
     "regions": [
         "hot",
-        "temperate"
+        "tropical",
+        "temperate",
+        "taiga",
+        "tundra",
+        "polar"
     ],
 
-    "continentZoom": 2,
+    "continentZoom": 3,
     "regionZoom": 2,
-    "biomeZoom": 0.7,
+    "biomeZoom": 1.4,
     "seaZoom": 1,
     "landChance": 0.7,
 
@@ -75,22 +79,81 @@
     "caves": true,
     "caveLayers": [
         {
-            "canBreakSurface": true,
-            "caveThickness": 0.5,
-            "caveZoom": 1.0,
+            "canBreakSurface": false,
+            "caveThickness": 0.1,
+            "caveZoom": 0.7,
             "horizontalSlope": {
+                "min": -30,
+                "max": 30,
                 "generator": {
-                    "style": "SIMPLEX"
-                },
-                "min": -20,
-                "max": 20
+                    "style": "SIMPLEX",
+                    "zoom": 2,
+                    "fracture": {
+                        "style": "SIMPLEX",
+                        "zoom": 0.8,
+                        "multiplier": 10
+                    }
+                }
             },
             "verticalSlope": {
+                "min": 10,
+                "max": 30,
                 "generator": {
-                    "style": "SIMPLEX"
-                },
+                    "style": "SIMPLEX",
+                    "zoom": 2
+                }
+            }
+        },
+        {
+            "canBreakSurface": false,
+            "caveThickness": 0.1,
+            "caveZoom": 0.8,
+            "horizontalSlope": {
+                "min": -30,
+                "max": 30,
+                "generator": {
+                    "style": "SIMPLEX",
+                    "zoom": 1.3,
+                    "fracture": {
+                        "style": "SIMPLEX",
+                        "zoom": 0.8,
+                        "multiplier": 10
+                    }
+                }
+            },
+            "verticalSlope": {
                 "min": 20,
-                "max": 20
+                "max": 60,
+                "generator": {
+                    "style": "SIMPLEX",
+                    "zoom": 1.3
+                }
+            }
+        },
+        {
+            "canBreakSurface": false,
+            "caveThickness": 0.1,
+            "caveZoom": 0.9,
+            "horizontalSlope": {
+                "min": -30,
+                "max": 30,
+                "generator": {
+                    "style": "SIMPLEX",
+                    "zoom": 1.3,
+                    "fracture": {
+                        "style": "SIMPLEX",
+                        "zoom": 0.8,
+                        "multiplier": 10
+                    }
+                }
+            },
+            "verticalSlope": {
+                "min": 50,
+                "max": 80,
+                "generator": {
+                    "style": "SIMPLEX",
+                    "zoom": 1.3
+                }
             }
         }
     ],
@@ -185,9 +248,9 @@
         }
     ],
 
-    "rockZoom": 0.1,
+    "rockZoom": 1,
     "rockPalette": {
-        "zoom": 0.3,
+        "zoom": 0.01,
         "palette": [
             {
                 "weight": 2,

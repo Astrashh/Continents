@@ -87,7 +87,7 @@
                 "desert/hut"
             ],
             "chance": 1,
-            "mode": "STILT",
+            "mode": "FAST_MIN_HEIGHT",
             "rotation": {
                 "enabled": true,
                 "yAxis": {

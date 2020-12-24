@@ -62,6 +62,19 @@
     },
     "decorators": [
         {
+            "chance": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "grass"
+                },
+                {
+                    "weight": 1,
+                    "block": "tall_grass"
+                }
+            ]
+        },
+        {
             "chance": 0.2,
             "variance": {
                 "style": "CELLULAR",
@@ -122,25 +135,18 @@
                     "block": "lily_of_the_valley"
                 }
             ]
-        },
-        {
-            "chance": 0.01,
-            "palette": [
-                {
-                    "block": "tall_grass"
-                }
-            ]
-        },
-        {
-            "chance": 0.5,
-            "palette": [
-                {
-                    "block": "grass"
-                }
-            ]
         }
     ],
     "objects": [
+        {
+            "place": [
+                "bush/small/1",
+                "bush/small/2",
+                "bush/small/3"
+            ],
+            "chance": 1,
+            "density": 5
+        },
         {
             "place": [
                 "tree/jungle/1",
@@ -162,6 +168,9 @@
                     "min": -360,
                     "max": 360
                 }
+            },
+            "translate": {
+                "y": -2
             }
         }
     ]

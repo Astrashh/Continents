@@ -50,21 +50,37 @@
             ]
         }
     ],
-    "wall": {
-        "palette": [
-            {
-                "block": "stone"
-            },
-            {
-                "block": "andesite"
-            }
-        ]
-    },
     "generators": [
         {
             "generator": "mountainous",
             "max": 90,
             "min": 10
+        }
+    ],
+    "objects": [
+        {
+            "place": [
+                "test/pyramid"
+            ],
+            "chance": 1,
+            "meld": true,
+
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "glass"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "cave_air"
+                            }
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }

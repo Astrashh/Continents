@@ -6,8 +6,7 @@
         "polar-spikes"
     ],
     "seaBiomes": [
-        "polar-deep-ocean",
-        "ocean"
+        "polar-deep-ocean"
     ],
     "shoreBiomes": [
         "polar-beach"

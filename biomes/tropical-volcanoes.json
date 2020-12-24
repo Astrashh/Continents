@@ -1,9 +1,9 @@
 {
-    "name": "Stepped Cliffs",
+    "name": "Volcanoes",
     "derivative": "THE_VOID",
     "vanillaDerivative": "THE_VOID",
     "children": [
-        "tropical-volcanic-lava"
+        "tropical-volcanoes-lava"
     ],
     "childStyle": {
         "style": "GLOB",
@@ -60,25 +60,6 @@
                     "block": "blackstone"
                 }
             ]
-        }
-    ],
-    "decorators": [
-        {
-            "chance": 0.5,
-            "style": {
-                "style": "SIMPLEX"
-            },
-            "zoom": 0.3,
-            "palette": [
-                {
-                    "block": "basalt"
-                }
-            ],
-            "stackMin": 1,
-            "stackMax": 4,
-            "variance": {
-                "style": "STATIC"
-            }
         }
     ]
 }

@@ -2,8 +2,9 @@
     "name": "Volcanic Plains",
     "derivative": "THE_VOID",
     "vanillaDerivative": "THE_VOID",
+    "rarity": 2,
     "children": [
-        "tropical-volcanic-cliffs"
+        "tropical-volcanoes"
     ],
     "childStyle": {
         "style": "SIMPLEX",

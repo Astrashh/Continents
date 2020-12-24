@@ -4,7 +4,9 @@
     "landBiomes": [
         "hot-desert",
         "hot-red-desert",
-        "hot-mesa"
+        "hot-savanna",
+        "hot-mesa",
+        "hot-mesa-plateau"
     ],
     "seaBiomes": [
         "ocean-warm"
@@ -39,5 +41,17 @@
             }
         }
     },
-    "riverThickness": 0.15
+    "riverThickness": 0.15,
+    "objects": [
+        {
+            "place": [
+                "skulls/giant-skull"
+            ],
+            "chance": 0.1,
+            "mode": "FAST_MIN_HEIGHT",
+            "translate": {
+                "y": -10
+            }
+        }
+    ]
 }

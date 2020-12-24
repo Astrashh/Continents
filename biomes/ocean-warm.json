@@ -208,9 +208,9 @@
         },
         {
             "place": [
-                "shipwreck/with-mast"
+                "ships/generic"
             ],
-            "chance": 1,
+            "chance": 0.005,
             "onwater": true,
             "translate": {
                 "y": -1

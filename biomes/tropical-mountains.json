@@ -1,24 +1,34 @@
 {
-    "name": "Tropical Plains Hills",
-    "derivative": "JUNGLE_HILLS",
-    "vanillaDerivative": "JUNGLE_HILLS",
-    "rarity": 2,
+    "name": "Tropical Mountains",
+    "derivative": "MODIFIED_JUNGLE",
+    "vanillaDerivative": "MODIFIED_JUNGLE",
+    "children": [
+        "tropical-mountains-water"
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.4,
+        "exponent": 4.6
+    },
+    "childShrinkFactor": 1,
     "generators": [
         {
-            "generator": "smooth-land",
-            "max": 20,
-            "min": -10
-        },
-        {
-            "generator": "small-cliffs",
-            "min": -17,
-            "max": 0
+            "generator": "mountainous",
+            "min": 33,
+            "max": 105
         }
     ],
     "layers": [
         {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4.5
+            },
             "palette": [
                 {
+                    "weight": 1,
                     "block": "grass_block"
                 }
             ]
@@ -26,38 +36,17 @@
         {
             "minHeight": 2,
             "maxHeight": 2,
-            "palette": [
-                {
-                    "block": "dirt"
-                }
-            ]
-        },
-        {
-            "style": {
-                "style": "STATIC"
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4.5
             },
-            "minHeight": 1,
-            "maxHeight": 1,
             "palette": [
                 {
                     "block": "dirt"
-                },
-                {
-                    "block": "stone"
                 }
             ]
         }
     ],
-    "wall": {
-        "palette": [
-            {
-                "block": "stone"
-            },
-            {
-                "block": "andesite"
-            }
-        ]
-    },
     "decorators": [
         {
             "chance": 0.7,

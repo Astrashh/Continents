@@ -19,18 +19,24 @@
     ],
     "layers": [
         {
-            "minHeight": 5,
-            "maxHeight": 5,
-            "style": {
-                "style": "FRACTAL_SMOKE",
-                "zoom": 0.04
+            "slopeCondition": {
+                "minimumSlope": 4,
+                "maximumSlope": 255
             },
+            "minHeight": 2,
+            "maxHeight": 10,
+            "palette": [
+                {
+                    "block": "blue_ice"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
             "palette": [
                 {
                     "block": "snow_block"
-                },
-                {
-                    "block": "blue_ice"
                 }
             ]
         }
@@ -97,6 +103,31 @@
                         "palette": [
                             {
                                 "block": "air"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "place": [
+                "landform/spikes/1",
+                "landform/spikes/2",
+                "landform/spikes/3"
+            ],
+            "mode": "MIN_HEIGHT",
+            "chance": 1,
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "stone"
+                        }
+                    ],
+                    "replace": {
+                        "palette": [
+                            {
+                                "block": "ice"
                             }
                         ]
                     }

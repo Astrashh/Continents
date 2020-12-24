@@ -1,0 +1,239 @@
+{
+    "name": "Mesa Plateau",
+    "derivative": "BADLANDS",
+    "vanillaDerivative": "BADLANDS",
+    "biomeScatter": [
+        "BADLANDS",
+        "BADLANDS_PLATEAU",
+        "ERODED_BADLANDS"
+    ],
+
+    "generators": [
+        {
+            "min": 70,
+            "max": 75,
+            "generator": "smooth-land-steep"
+        }
+    ],
+    "lockLayers": true,
+    "lockLayersMax": 15,
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "style": {
+                "style": "FRACTAL_WATER"
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "coarse_dirt"
+                },
+                {
+                    "block": "dirt"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "orange_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "white_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "yellow_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "orange_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 5,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "brown_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "red_terracotta"
+                }
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 10,
+            "slopeCondition": {
+                "minimumSlope": 3,
+                "maximumSlope": 255
+            },
+            "palette": [
+                {
+                    "block": "terracotta"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [
+                {
+                    "block": "tall_grass"
+                }
+            ]
+        }
+    ],
+    "biomeStyle": {
+        "style": "IRIS"
+    },
+    "objects": [
+        {
+            "place": [
+                "desert/tower",
+                "desert/tower-twin"
+            ],
+            "chance": 0.1,
+            "density": 2,
+            "mode": "FAST_STILT",
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "place": [
+                "tree/acacia/1",
+                "tree/acacia/2",
+                "tree/acacia/3"
+            ],
+            "chance": 1,
+            "clamp": {
+                "minimumHeight": 133,
+                "maximumHeight": 255
+            },
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        }
+    ]
+}
