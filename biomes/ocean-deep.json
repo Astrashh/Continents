@@ -18,21 +18,37 @@
                 "maximumSlope": 3
             },
             "style": {
-                "style": "FRACTAL_SMOKE",
-                "zoom": 0.04
+                "style": "FRACTAL_FBM_IRIS"
             },
+            "zoom": 0.6,
             "palette": [
+                {
+                    "block": "sand"
+                },
+                {
+                    "block": "clay"
+                },
+                {
+                    "block": "sand"
+                },
                 {
                     "block": "gravel"
                 },
                 {
+                    "block": "sand"
+                },
+                {
+                    "block": "dirt"
+                },
+                {
+                    "weight": 2,
                     "block": "sand"
                 }
             ]
         },
         {
             "minHeight": 2,
-            "maxHeight": 2,
+            "maxHeight": 10,
             "palette": [
                 {
                     "block": "gravel"

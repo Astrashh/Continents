@@ -33,7 +33,7 @@
         },
         {
             "minHeight": 1,
-            "maxHeight": 4,
+            "maxHeight": 8,
             "palette": [
                 {
                     "block": "water",

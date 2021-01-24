@@ -18,7 +18,7 @@
     "regionZoom": 2,
     "biomeZoom": 1.4,
     "seaZoom": 1,
-    "landChance": 0.7,
+    "landChance": 1,
 
     "aggressiveBiomeReshuffle": false,
 
@@ -76,34 +76,65 @@
     "postProcessCaves": true,
     "postProcessingSlabs": true,
 
+    "ravines": false,
+    "ravineRarity": 1000,
+    "ravineRibRarity": 1000,
+
+    "carving": true,
+    "carveLayers": [
+        {
+            "style": {
+                "style": "BIOCTAVE_SIMPLEX",
+                "zoom": 0.7
+            },
+            "fullPercent": 1,
+            "threshold": 0.7,
+            "minHeight": 1,
+            "maxHeight": 50
+        },
+        {
+            "style": {
+                "style": "BIOCTAVE_SIMPLEX",
+                "zoom": 0.7
+            },
+            "fullPercent": 1,
+            "threshold": 0.7,
+            "minHeight": 45,
+            "maxHeight": 95
+        },
+        {
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 2
+            },
+            "fullPercent": 1,
+            "threshold": 0.8,
+            "minHeight": 20,
+            "maxHeight": 70
+        },
+        {
+            "style": {
+                "style": "IRIS",
+                "zoom": 0.5
+            },
+            "fullPercent": 0.5,
+            "threshold": 0.7,
+            "minHeight": 50,
+            "maxHeight": 150
+        },
+        {
+            "style": {
+                "style": "IRIS",
+                "zoom": 0.35
+            },
+            "fullPercent": 0.5,
+            "threshold": 0.7,
+            "minHeight": 30,
+            "maxHeight": 130
+        }
+    ],
     "caves": true,
     "caveLayers": [
-        {
-            "canBreakSurface": false,
-            "caveThickness": 0.1,
-            "caveZoom": 0.7,
-            "horizontalSlope": {
-                "min": -30,
-                "max": 30,
-                "generator": {
-                    "style": "SIMPLEX",
-                    "zoom": 2,
-                    "fracture": {
-                        "style": "SIMPLEX",
-                        "zoom": 0.8,
-                        "multiplier": 10
-                    }
-                }
-            },
-            "verticalSlope": {
-                "min": 10,
-                "max": 30,
-                "generator": {
-                    "style": "SIMPLEX",
-                    "zoom": 2
-                }
-            }
-        },
         {
             "canBreakSurface": false,
             "caveThickness": 0.1,
@@ -155,8 +186,61 @@
                     "zoom": 1.3
                 }
             }
+        },
+        {
+            "canBreakSurface": false,
+            "caveThickness": 0.1,
+            "caveZoom": 0.75,
+            "horizontalSlope": {
+                "min": -30,
+                "max": 30,
+                "generator": {
+                    "style": "BIOCTAVE_SIMPLEX",
+                    "zoom": 2,
+                    "fracture": {
+                        "style": "SIMPLEX",
+                        "zoom": 0.3,
+                        "multiplier": 20
+                    }
+                }
+            },
+            "verticalSlope": {
+                "min": 1,
+                "max": 35,
+                "generator": {
+                    "style": "TRIOCTAVE_SIMPLEX",
+                    "zoom": 1.3
+                }
+            },
+            "fluid": {
+                "fluidHeight": 17,
+                "fluidType": {
+                    "block": "lava"
+                }
+            }
         }
     ],
+
+    "rockZoom": 1,
+    "rockPalette": {
+        "style": {
+            "style": "CELLULAR",
+            "zoom": 0.05
+        },
+        "zoom": 0.01,
+        "palette": [
+            {
+                "weight": 10,
+                "block": "stone"
+            },
+            {
+                "block": "granite"
+            },
+            {
+                "block": "andesite"
+            }
+        ]
+    },
 
     "deposits": [
         {
@@ -248,31 +332,6 @@
         }
     ],
 
-    "rockZoom": 1,
-    "rockPalette": {
-        "zoom": 0.01,
-        "palette": [
-            {
-                "weight": 2,
-                "block": "andesite"
-            },
-            {
-                "weight": 8,
-                "block": "stone"
-            },
-            {
-                "weight": 1,
-                "block": "granite"
-            }
-        ],
-        "style": {
-            "style": "CELLULAR_IRIS"
-        }
-    },
-
     "vanillaStructures": true,
-    "placeObjects": true,
-
-    "ravineRarity": 1000,
-    "ravineRibRarity": 1000
+    "placeObjects": true
 }
